@@ -137,19 +137,18 @@ Five segmentation architectures were evaluated.
 
 ### Training configuration
 
-| Parameter               |                              Value                              |
-| ----------------------- | ------------------: | ------------------: | ------------------: |
-| Architecture            |               U-Net |             U-Net++ |          DeepLabV3+ |
-| Encoder                 |            ResNet50 |            ResNet50 |            ResNet50 |
-| Encoder weights         |            ImageNet |            ImageNet |            ImageNet |
-| Input size              |           832 × 832 |           640 × 640 |           832 × 832 |
-| Batch size              |                   4 |                   4 |                   4 |
-| Learning rate           |                1e-4 |                1e-4 |                1e-4 |
-| Maximum epochs          |                 150 |                 150 |                 150 |
-| Early stopping patience |                   5 |                   5 |                   5 |
-| Random seed             |                  42 |                  42 |                  42 |
-| Main metric             |                 IoU |                 IoU |                 IoU |
-| Hardware                | 2 × NVIDIA Tesla T4 | 2 × NVIDIA Tesla T4 | 2 × NVIDIA Tesla T4 |
+| Parameter | U-Net | U-Net++ | DeepLabV3+ |
+| :--- | :---: | :---: | :---: |
+| Encoder | ResNet50 | ResNet50 | ResNet50 |
+| Weights | ImageNet | ImageNet | ImageNet |
+| Input size | 832×832 | 640×640 | 832×832 |
+| Batch size | 4 | 4 | 4 |
+| Learning rate | 1e-4 | 1e-4 | 1e-4 |
+| Max epochs | 150 | 150 | 150 |
+| Early stopping | 5 | 5 | 5 |
+| Seed | 42 | 42 | 42 |
+| Metric | IoU | IoU | IoU |
+| Hardware | 2×T4 | 2×T4 | 2×T4 |
 
 The model checkpoint was saved as:
 
